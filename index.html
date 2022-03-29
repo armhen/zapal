@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+  
+    <style>
+        video{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top:50px;
+            width:250px;
+            
+        }
+        button{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top:20px;
+            width:225px;
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-top:20px;
+            width:220px;
+        }
+        h1{
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-family:monospace;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Haydar Zapal</h1>
+    <video id="video"  src="https://armhen.github.io/media/zapal.mp4">
+      
+    </video>
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">PLAY</button>
+</body>
+<script>
+function strt(){
+ var v=document.getElementById('video');
+    v.play()
+}
+
+function login(){
+    var pas=document.getElementById('pass').value;
+    if(pas == '123456789'){
+        strt()
+    }
+    else{
+        location.reload()
+    }
+}
+</script>
+</html>
